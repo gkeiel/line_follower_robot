@@ -19,6 +19,7 @@ const float k_i = 0;
 const float k_d = 5;
 const float t_s = 0.01;
 const float f_f = 1;
+const float beta = 0.8;
 const uint8_t p = 10;
 const uint8_t u_i_max = 127;
 
@@ -49,8 +50,11 @@ void controle()
   // erro de seguimento
   e = r -y;
 
+  // erro ponderado
+  float e_p = beta*r -y;
+
   // sinal de controle
-  float u_p = k_p*e;
+  float u_p = k_p*e_p;
   float u_i = u_ia*f_f;
   if( abs(e) < 1 )
   {

@@ -1,8 +1,6 @@
 #include <TimerOne.h>
 #define A A0 // sensor A0
 #define B A1 // sensor A1
-#define C A2 // sensor A2
-#define D A3 // sensor A3
 #define ME 3 // saída 3
 #define MD 5 // saída 5
 #define INA 4
@@ -19,6 +17,7 @@ const float k_i = 0;
 const float k_d = 5;
 const float t_s = 0.01;
 const float f_f = 1;
+const float beta = 0.8;
 const uint8_t p = 10;
 const uint8_t u_i_max = 127;
 
@@ -34,23 +33,24 @@ void medicao()
 {
   float y_1 = 1023 -analogRead(A);
   float y_2 = 1023 -analogRead(B);
-  float y_3 = 1023 -analogRead(C);
-  float y_4 = 1023 -analogRead(D);
-  float y_soma = y_1 +y_2 +y_3 +y_4;
-  if (y_soma > 0) y = (1*y_1 +2*y_2 +3*y_3 +4*y_4)/y_soma;
+  float y_soma = y_1 +y_2;
+  if (y_soma > 0) y = (1*y_1 +2*y_2)/y_soma;
 }
 
 // função para lógica de ativação dos motores
 void controle()
 {
   // setpoint
-  r = 2.5;
+  r = 1.5;
 
   // erro de seguimento
   e = r -y;
 
+  // erro ponderado
+  float e_p = beta*r -y;
+
   // sinal de controle
-  float u_p = k_p*e;
+  float u_p = k_p*e_p;
   float u_i = u_ia*f_f;
   if( abs(e) < 1 )
   {
@@ -106,7 +106,7 @@ void comunicacao()
 void setup()
 {
   // inicialização de variáveis
-  y    = 2.5;
+  y    = 1.5;
   e_a  = 0;
   u_ia = 0;
   u_da = 0;
