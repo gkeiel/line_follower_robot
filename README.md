@@ -14,15 +14,23 @@ The following programs are available:
 
 ## Physical experiment
 
-The physical experiment is shown below.
+The physical experiment and its operation on a closed circuit is shown below.
 <p align="center">
     <img
         src="images/line_follower_robot.png"
         alt=" "
-        width="300"
+        width="500"
     />
 </p>
 
-## 📌 Notes
+<p align="center">
+    <img
+        src="images/line_follower_robot.gif"
+        alt="Line-following robot operating on a closed circuit"
+        width="500"
+    />
+</p>
+
+## Notes
 
 If this project helped you, please consider citing it properly and starring the repository. Future improvements and new features may be added in the future.
