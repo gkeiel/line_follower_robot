@@ -2,7 +2,7 @@
 
 A repository of control algorithms for programable line-follower robots using different control strategies.
 
-Digital proportional-integral-derivative (PID) controllers and their variations are implemented for 8-bits AVR microcontrollers such as the ATMega328P. Moreover, the repository is intended as a practical reference for learning, testing, and comparing different control approaches.
+Digital proportional-integral-derivative (PID) controllers and their variations are implemented for 8-bits AVR microcontrollers such as the ATMega328P. Moreover, the repository is intended as a practical reference for learning, testing, and comparing different control approaches. Requires the `TimerOne` library for hardware-timed interrupts, avoiding the usual `millis()`-based polling hacks.
 
 The following programs are available:
 - [Line follower PID 2 sensors tustin](./line_follower_pid_2sensors_tustin)
@@ -11,6 +11,7 @@ The following programs are available:
 - [Line follower PID 4 sensors tustin](./line_follower_pid_4sensors_tustin)
 - [Line follower PID 4 sensors tustin 2DOF](./line_follower_pid_4sensors_tustin_2dof)
 - [Line follower PID 4 sensors tustin nonlinear](./line_follower_pid_4sensors_tustin_nonlinear)
+
 
 ## Physical experiment
 

@@ -49,7 +49,7 @@ void controle()
   // sinal de controle
   float u_p = k_p*e;
   float u_i = u_ia*f_f;
-  if( abs(e) < 1 )
+  if( abs(e) < 0.1 )
   {
     u_i = u_ia*f_f +k_i*t_s*(e +e_a)/2;
   }

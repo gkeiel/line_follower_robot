@@ -12,9 +12,9 @@ float r, y, e, e_a, u, u_da, u_ia;
 uint8_t k;
 bool flag_i = false;
 
-const float k_p = 50;
+const float k_p = 500;
 const float k_i = 0;
-const float k_d = 5;
+const float k_d = 10;
 const float t_s = 0.01;
 const float f_f = 1;
 const float beta = 0.8;
@@ -53,7 +53,7 @@ void controle()
   // sinal de controle
   float u_p = k_p*e_p;
   float u_i = u_ia*f_f;
-  if( abs(e) < 1 )
+  if( abs(e) < 0.1 )
   {
     u_i = u_ia*f_f +k_i*t_s*(e +e_a)/2;
   }
