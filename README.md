@@ -13,7 +13,7 @@ The following programs are available:
 - [Line follower PID 4 sensors tustin nonlinear](./line_follower_pid_4sensors_tustin_nonlinear)
 
 
-## Physical experiment
+## Schematic diagram
 
 The proposed schematic diagram is shown below.
 <p align="center">
@@ -25,7 +25,7 @@ The proposed schematic diagram is shown below.
 </p>
 
 
-## Results
+## Physical experiment
 
 The physical experiment is its operation on a closed circuit is shown below.
 <p align="center">
