@@ -15,7 +15,19 @@ The following programs are available:
 
 ## Physical experiment
 
-The physical experiment and its operation on a closed circuit is shown below.
+The proposed schematic diagram is shown below.
+<p align="center">
+    <img
+        src="images/schematic_line_follower_robot.png"
+        alt=" "
+        width="1080"
+    />
+</p>
+
+
+## Results
+
+The physical experiment is its operation on a closed circuit is shown below.
 <p align="center">
     <img
         src="images/line_follower_robot.png"
@@ -32,6 +44,7 @@ The physical experiment and its operation on a closed circuit is shown below.
     />
 </p>
 
+
 ## Notes
 
-If this project helped you, please consider citing it properly and starring the repository. Future improvements and new features may be added in the future.
+If this project helped you, please consider citing it properly and starring the repository. Improvements and new features may be added in the future.
