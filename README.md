@@ -8,9 +8,11 @@ The following programs are available:
 - [Line follower PID 2 sensors tustin](./line_follower_pid_2sensors_tustin)
 - [Line follower PID 2 sensors tustin 2DOF](./line_follower_pid_2sensors_tustin_2dof)
 - [Line follower PID 2 sensors tustin nonlinear](./line_follower_pid_2sensors_tustin_nonlinear)
+- [Line follower PID 2 sensors tustin adjustable](./line_follower_pid_2sensors_tustin_adjustable)
 - [Line follower PID 4 sensors tustin](./line_follower_pid_4sensors_tustin)
 - [Line follower PID 4 sensors tustin 2DOF](./line_follower_pid_4sensors_tustin_2dof)
-- [Line follower PID 4 sensors tustin nonlinear](./line_follower_pid_4sensors_tustin_nonlinear)
+- [Line follower PID 4 sensors tustin nonlinear](./line_follower_pid_4sensors_tustin_nonlinear)  
+- [Line follower PID 4 sensors tustin adjustable](./line_follower_pid_4sensors_tustin_adjustable)  
 
 
 ## Schematic diagram

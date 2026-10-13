@@ -6,3 +6,5 @@ line_follower_pid_2sensors_tustin_framework/*
 line_follower_pid_4sensors_tustin_framework/*
 line_follower_pid_2sensors_tustin_routing/*
 line_follower_pid_4sensors_tustin_routing/*
+line_follower_pid_2sensors_tustin_wifi/*
+line_follower_pid_4sensors_tustin_wifi/*
